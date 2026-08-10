@@ -1,0 +1,22 @@
+@use "./styles/fonts";
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+}
+main {
+  padding: 0 60px;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
