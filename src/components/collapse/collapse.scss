@@ -1,0 +1,38 @@
+.collapse {
+  max-width: 700px;
+  margin: 0px auto;
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #ff6060;
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  &-btn {
+    border: none;
+    background: transparent;
+    color: white;
+  }
+
+  &-description {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background: rgb(244, 244, 244);
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 13px;
+    transition:
+      max-height 0.3s ease,
+      padding 0.3s ease;
+
+    &--open {
+      max-height: 300px;
+      padding: 15px;
+    }
+  }
+}
