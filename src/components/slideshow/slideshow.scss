@@ -1,0 +1,22 @@
+.carousel {
+  &-img {
+    width: 200px;
+  }
+  .carousel-arrow {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &-arrow-left {
+      left: 20px;
+    }
+
+    &-arrow-right {
+      right: 20px;
+    }
+  }
+}

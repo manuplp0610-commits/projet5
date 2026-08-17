@@ -5,7 +5,7 @@
   overflow: hidden;
   text-decoration: none;
   width: 340px;
-  height: 340px;
+  max-height: 340px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
   &-image {

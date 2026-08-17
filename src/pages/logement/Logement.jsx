@@ -1,3 +1,12 @@
+import { useParams } from "react-router-dom";
+import Slideshow from "../../components/slideshow/Slideshow";
+
 export default function Logement() {
-  return <div>Logement</div>;
+  const { id } = useParams();
+
+  return (
+    <div>
+      <Slideshow id={id} />
+    </div>
+  );
 }
