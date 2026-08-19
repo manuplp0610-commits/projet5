@@ -1,0 +1,58 @@
+.logement {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-A {
+      &-title {
+        font-size: 36px;
+        color: #ff6060;
+        margin-bottom: 5px;
+      }
+      &-location {
+        margin-top: 0;
+      }
+      &-tags {
+        background: #ff6060;
+        padding: 5px 10px;
+        border-radius: 25px;
+        color: white;
+        margin-right: 10px;
+      }
+    }
+    &-B {
+      display: flex;
+      align-items: center;
+      &-info {
+        margin-right: 10px;
+        &-name {
+          color: #ff6060;
+          margin-top: 0;
+        }
+        &-rating {
+          &-star {
+            color: #d3d3d3;
+
+            &.filled {
+              color: #ff6060;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-img-profil {
+    width: 64px;
+    border-radius: 50%;
+  }
+  &-collapses {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+
+    &-collapse {
+      flex: 1;
+    }
+  }
+}

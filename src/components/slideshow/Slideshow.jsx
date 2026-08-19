@@ -1,14 +1,9 @@
 import { useState } from "react";
 import "../../components/slideshow/slideshow.scss";
-import data from "../../data/data.json";
 
-export default function Slideshow({ id }) {
+export default function Slideshow({ pictures }) {
   const [image, setImage] = useState(0);
-  const test = data.find((item) => item.id == id);
-  console.log(test);
 
-  console.log(id);
-  const pictures = test.pictures;
   const imageWatch = pictures[image];
 
   const handelClickLeft = () => {
@@ -27,21 +22,25 @@ export default function Slideshow({ id }) {
 
   return (
     <div className="carousel">
-      <button
-        className="carousel-arrow carousel-arrow-left"
-        onClick={handelClickLeft}
-      >
-        ‹
-      </button>
+      {image !== 0 && (
+        <button
+          className="carousel-arrow carousel-arrow-left"
+          onClick={handelClickLeft}
+        >
+          ‹
+        </button>
+      )}
 
       <img className="carousel-img" src={imageWatch} alt="" />
 
-      <button
-        className="carousel-arrow carousel-arrow-right"
-        onClick={handelClickRight}
-      >
-        ›
-      </button>
+      {image < pictures.length - 1 && (
+        <button
+          className="carousel-arrow carousel-arrow-right"
+          onClick={handelClickRight}
+        >
+          ›
+        </button>
+      )}
     </div>
   );
 }
